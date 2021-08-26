@@ -1,5 +1,35 @@
-{{!-- <div class="comment-container">
-    <div class="comment container medium">
-        If you want to embed comments, this is a good place to do it!
-    </div>
-</div> --}}
+<div class="comment-container">
+
+	<div class="license container medium">
+		{{{t "This work is licensed under {license}" license="<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><i class=\"fab fa-creative-commons\"></i><i class=\"fab fa-creative-commons-by\"></i><i class=\"fab fa-creative-commons-nc\"></i><i class=\"fab fa-creative-commons-nd\"></i><span> CC BY-NC-ND 4.0 </span></a>"}}}
+	</div>
+
+	<div class="comment container medium">
+
+		{{!-- Disqus --}}
+		<div id="disqus_thread"></div>
+		<script>
+			var disqus_config = function () {
+				this.page.url = "{{url absolute="true"}}";
+				this.page.identifier = "ghost-{{comment_id}}"
+			};
+			(function() {
+			var d = document, s = d.createElement('script');
+			s.src = 'https://shyrz.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+		</script>
+
+		{{!-- Cusdis：dark mode 下样式支持较差 --}}
+		{{!-- <div id="cusdis_thread"
+			data-host="https://cusdis.com"
+			data-app-id="b6637087-ec5f-4848-9f55-4ede60171f44"
+			data-page-id="{{comment_id}}"
+			data-page-url="{{url absolute="true"}}"
+			data-page-title="{{title}}"
+		></div>
+		<script async defer src="https://cusdis.com/js/cusdis.es.js"></script> --}}
+		
+	</div>
+</div>

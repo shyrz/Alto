@@ -13,13 +13,19 @@ $(function () {
 function darkMode() {
   $('.toggle-track').on('click', function () {
     if (html.hasClass('dark-mode')) {
-      html.removeClass('dark-mode');
-      localStorage.setItem('alto_dark', false);
+      html.removeClass('dark-mode')
+      localStorage.setItem('PROSE_DARKMODE', false);
     } else {
       html.addClass('dark-mode');
-      localStorage.setItem('alto_dark', true);
+      localStorage.setItem('PROSE_DARKMODE', true);
     }
   });
+}
+
+function config() {
+  if (typeof config != 'undefined') {
+    
+  }
 }
 
 function whiteLogo() {

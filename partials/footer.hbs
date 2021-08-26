@@ -1,27 +1,83 @@
 <footer class="site-footer container large">
-    <div class="copyright">
-        Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
-    </div>
+	
+	<div class="copyright">
+		Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a> with theme <a href="https://github.com/shyrz/prose" target="_blank" rel="noopener">Prose</a>
+	</div>
 
-    {{> logo}}
+	{{> logo}}
 
-    <div class="footer-social">
-        {{#if @site.facebook}}
-            <a class="footer-social-item footer-social-item-facebook" href="{{facebook_url @site.facebook}}"
-                target="_blank" rel="noopener" aria-label="Facebook">
-                <i class="icon icon-facebook"></i>
-            </a>
-        {{/if}}
-        {{#if @site.twitter}}
-            <a class="footer-social-item footer-social-item-twitter" href="{{twitter_url @site.twitter}}"
-                target="_blank" rel="noopener" aria-label="Twitter">
-                <i class="icon icon-twitter"></i>
-            </a>
-        {{/if}}
-        <a class="footer-social-item footer-social-item-rss"
-            href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" target="_blank" rel="noopener"
-            aria-label="RSS">
-            <i class="icon icon-rss"></i>
-        </a>
-    </div>
+	<div class="footer-social">
+		{{#if @site.facebook}}
+			<a class="footer-social-item footer-social-item-facebook" href="{{facebook_url @site.facebook}}"
+				target="_blank" rel="noopener" aria-label="Facebook">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+		{{/if}}
+		{{#if @site.twitter}}
+			<a class="footer-social-item footer-social-item-twitter" href="{{twitter_url @site.twitter}}"
+				target="_blank" rel="noopener" aria-label="Twitter">
+				<i class="fab fa-twitter"></i>
+			</a>
+		{{/if}}
+		{{!-- Weibo --}}
+		<a class="footer-social-item footer-social-item-weibo" href="https://weibo.com/Phantr4x"
+			target="_blank" rel="noopener" aria-label="Weibo">
+			<i class="fab fa-weibo"></i>
+		</a>
+
+		{{!-- Weibo --}}
+		<a class="footer-social-item footer-social-item-instagram" href="https://instagram.com/shyrz__"
+			target="_blank" rel="noopener" aria-label="Instagram">
+			<i class="fab fa-instagram"></i>
+		</a>
+
+		{{!-- Telegram --}}
+		<a class="footer-social-item footer-social-item-telegram" href="https://t.me/shyrzz"
+			target="_blank" rel="noopener" aria-label="Telegram">
+			<i class="fab fa-telegram-plane"></i>
+		</a>
+
+		{{!-- GitHub --}}
+		<a class="footer-social-item footer-social-item-github" href="https://github.com/shyrz"
+			target="_blank" rel="noopener" aria-label="GitHub">
+			<i class="fab fa-github"></i>
+		</a>
+
+		{{!-- GitHub --}}
+		<a class="footer-social-item footer-social-item-dribbble" href="https://dribbble.com/Shyrz_"
+			target="_blank" rel="noopener" aria-label="Dribbble">
+			<i class="fab fa-dribbble"></i>
+		</a>
+
+		{{!-- GoodReads --}}
+		<a class="footer-social-item footer-social-item-goodreads" href="https://goodreads.com/shyrz"
+			target="_blank" rel="noopener" aria-label="GoodReads">
+			<i class="fab fa-goodreads-g"></i>
+		</a>
+
+		{{!-- Spotify --}}
+		<a class="footer-social-item footer-social-item-spotify" href="https://volt.fm/shyrz"
+			target="_blank" rel="noopener" aria-label="Spotify">
+			<i class="fab fa-spotify"></i>
+		</a>
+		
+		{{!-- Steam --}}
+		<a class="footer-social-item footer-social-item-steam" href="https://steamcommunity.com/id/shyrz_cn"
+			target="_blank" rel="noopener" aria-label="Steam">
+			<i class="fab fa-steam"></i>
+		</a>
+
+		{{!-- Patreon --}}
+		<a class="footer-social-item footer-social-item-patreon" href="https://www.patreon.com/shyrz"
+			target="_blank" rel="noopener" aria-label="Patreon">
+			<i class="fab fa-patreon"></i>
+		</a>
+
+		{{!-- RSS --}}
+		<a class="footer-social-item footer-social-item-rss"
+			href="{{@site.url}}/rss/" target="_blank" rel="noopener"
+			aria-label="RSS">
+			<i class="fas fa-rss"></i>
+		</a>
+	</div>
 </footer>

@@ -1,4 +1,4 @@
-# Alto
+# Prose
 
 A clean, minimalist theme featuring a light and dark mode. Launch your online publications with flair. Completely free and fully responsive, released under the MIT license.
 
