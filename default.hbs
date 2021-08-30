@@ -28,84 +28,25 @@
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/@shyrz/webfonts@1.1.0/HanYi/HYXuanSong/HYXuanSong55S.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/@shyrz/webfonts@1.1.0/HanYi/HYXuanSong/HYXuanSong75S.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/@shyrz/webfonts@1.1.0/HanYi/HYXuanSong/HYXuanSong85S.woff2" as="font" type="font/woff2" crossorigin>
-
 	{{!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> --}}
 	{{!-- <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin> --}}
 	{{!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"> --}}
 	{{!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"> --}}
 	
 	<link rel="stylesheet" href="{{asset "built/screen.css"}}">
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5BRZBCDF7R"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
 
-		gtag('config', 'G-5BRZBCDF7R');
-	</script>
-	<!-- Hotjar Tracking Code for shyrz.me -->
 	<script>
-		(function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:2468161,hjsv:6};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-			a.appendChild(r);
-		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    if (localStorage.getItem('PROSE_DARKMODE') == 'true') {
+        document.documentElement.classList.add('dark-mode');
+    }
 	</script>
+
 	{{!-- FontAwesome --}}
 	<script src="https://kit.fontawesome.com/bb497b04c1.js" crossorigin="anonymous"></script>
-	<script>
-		if (localStorage.getItem('PROSE_DARKMODE') == 'true') {
-			document.documentElement.classList.add('dark-mode');
-		}
-	</script>
-	<!-- Channel Plugin Scripts -->
-	<script>
-		(function() {
-			var w = window;
-			if (w.ChannelIO) {
-				return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
-			}
-			var ch = function() {
-				ch.c(arguments);
-			};
-			ch.q = [];
-			ch.c = function(args) {
-				ch.q.push(args);
-			};
-			w.ChannelIO = ch;
-			function l() {
-				if (w.ChannelIOInitialized) {
-					return;
-				}
-				w.ChannelIOInitialized = true;
-				var s = document.createElement('script');
-				s.type = 'text/javascript';
-				s.async = true;
-				s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-				s.charset = 'UTF-8';
-				var x = document.getElementsByTagName('script')[0];
-				x.parentNode.insertBefore(s, x);
-			}
-			if (document.readyState === 'complete') {
-				l();
-			} else if (window.attachEvent) {
-				window.attachEvent('onload', l);
-			} else {
-				window.addEventListener('DOMContentLoaded', l, false);
-				window.addEventListener('load', l, false);
-			}
-		})();
-		ChannelIO('boot', {
-			"pluginKey": "4b7b0e5f-caea-421c-9360-4c57be507cd5"
-		});
-	</script>
-	<!-- End Channel Plugin -->
-	
+
+	{{!-- Prism.css - Okaidia --}}
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	{{ghost_head}}
 </head>
 
