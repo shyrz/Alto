@@ -444,7 +444,11 @@ pre {
 	-webkit-overflow-scrolling: touch;
 }
 
-code {
+pre, pre * {
+  font-family: var(--font-mono) !important;
+}
+
+code, code * {
 	font-family: var(--font-mono) !important;
 	font-size: 14px;
 }
