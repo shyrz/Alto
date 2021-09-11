@@ -1,14 +1,16 @@
 # Prose
 
-A clean, minimalist theme featuring a light and dark mode. Launch your online publications with flair. Completely free and fully responsive, released under the MIT license.
+A clean, minimalist theme featuring a light and dark mode.
 
-**Demo: https://alto.ghost.io**
+Launch your online publications with flair. Completely free and fully responsive, released under the MIT license.
+
+**Demo: https://shyrz.me**
 
 &nbsp;
 
 # Instructions
 
-1. [Download this theme](https://github.com/TryGhost/Alto/archive/master.zip)
+1. [Download this theme](https://github.com/shyrz/prose/archive/master.zip)
 2. Log into Ghost, and go to the `Design` settings area to upload the zip file
 
 # White Logo

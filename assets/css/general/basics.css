@@ -74,11 +74,12 @@
 	--dark-mode-border-color: var(--gray-600);
 	--animation-base: ease-in-out;
 	--shadow-base: 0 0 5px rgba(0, 0, 0, 0.2);
+  --shadow-button: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 	
 	
 	--font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; /* stylelint-disable-line value-keyword-case */
-	--font-sans: 'Prose Sans', PingFang SC, Lantinghei SC, Hiragino Sans GB, STXihei, '华文细黑', 'Microsoft Yahei', '微软雅黑', Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
-	--font-serif: 'Prose Serif', 'Noto Serif CJK SC', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'STSong', '华文宋体', 'AR PL SungtiL GB', NSimSun, SimSun, 'TW-Sung', 'WenQuanYi Bitmap Song', serif;
+	--font-sans: 'Prose', 'Prose Sans', PingFang SC, Lantinghei SC, Hiragino Sans GB, STXihei, '华文细黑', 'Microsoft Yahei', '微软雅黑', Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+	--font-serif: 'Prose', 'Prose Serif', 'Noto Serif CJK SC', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'STSong', '华文宋体', 'AR PL SungtiL GB', NSimSun, SimSun, 'TW-Sung', 'WenQuanYi Bitmap Song', serif;
 	/* --font-serif: 'Merriweather', Georgia, 'Nimbus Roman No9 L'; */
 }
 

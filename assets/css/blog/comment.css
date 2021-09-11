@@ -16,3 +16,7 @@
 	display: inline-block;
 	margin-right: 4px;
 }
+
+.utterances, .utterances * {
+	background-color: transparent !important;
+}

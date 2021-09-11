@@ -1,0 +1,29 @@
+{{!< default}}
+
+<div class="content-area">
+  <main class="site-main">
+    {{#get "tags" limit="all" include="count.posts"}}
+      <section class="post-tags">
+        {{#foreach tags}}
+          <div class="post-tags-card">
+            <a href="{{url}}" class="post-tags-card-link {{#unless feature_image}}no-picture{{/unless}}" aria-label="{{name}}">
+              {{#if feature_image}}
+                <img class="post-tags-card-picture" src="{{img_url feature_image size="m"}}" loading="lazy" alt="">
+              {{/if}}
+              <div class="post-tags-card-info {{#unless feature_image}}no-picture{{/unless}}">
+                <h4 class="post-tags-card-name">{{name}}</h4>
+                <span class="post-tags-card-counter">
+                  {{plural count.posts empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}
+                </span>
+              </div>
+            </a>
+          </div>
+          {{else}}
+          <p class="post-tags-not-found">
+            {{t "No tags found :("}}
+          </p>
+        {{/foreach}}
+      </section>
+    {{/get}}
+  </main>
+</div>

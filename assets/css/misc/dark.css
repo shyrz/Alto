@@ -29,7 +29,7 @@
 .dark-mode hr,
 .dark-mode hr::before,
 .dark-mode hr::after {
-  background-color: var(--white-color);
+  background-color: var(--dark-mode-border-color);
 }
 
 .dark-mode .menu-item-link,
@@ -70,4 +70,23 @@
 
 .dark-mode blockquote {
   border-color: var(--white-color);
+}
+
+.dark-mode .podcast-player {
+  /* background-color: var(--dark-mode-bg-color); */
+  background-color: rgba(24, 24, 27, 0.85);
+}
+
+.dark-mode .podcast-track {
+  background-color: var(--gray-700);
+}
+
+.dark-mode .podcast-progress {
+  background-color: var(--gray-500);
+}
+
+.dark-mode .scrolltop-button {
+  background-color: var(--dark-mode-bg-color);
+  box-shadow: none;
+  color: var(--light-gray-color);
 }

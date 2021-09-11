@@ -1,0 +1,60 @@
+<div class="podcast-player{{#if is_external}} podcast-player-external{{/if}}{{#unless feature_image}} no-thumbnail{{/unless}}">
+
+  {{!-- Podcast Audio --}}
+  <audio class="podcast-audio"{{#unless is_external}} src="{{og_description}}"{{/unless}}></audio>
+
+  {{!-- Podcast Media --}}
+  <div class="podcast-media u-placeholder square">
+    <button class="podcast-media-button podcast-button-play button button-small podcast-js"><i class="icon icon-button-play"></i></button>
+    <img class="podcast-image lazyload u-object-fit"
+      data-srcset=""
+      data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      alt="{{title}}" />
+  </div>
+  
+  <div class="podcast-wrapper">
+
+    {{!-- Podcast Meta --}}
+    <div class="podcast-meta">
+      <header class="podcast-header{{#if big_title}} big-title{{/if}}{{#if single}} container medium{{/if}}">
+        <h2 class="podcast-title">...</h2>
+        {{^is "page"}}
+          <div class="podcast-meta">
+            <span class="podcast-meta-item podcast-meta-date">
+              <time datetime="{{date format="YYYY-MM-DD"}}">
+                {{#unless relative_date}}
+                  {{date published_at}}
+                {{else}}
+                  {{date published_at timeago="true"}}
+                {{/unless}}
+              </time>
+            </span>
+            <span class="podcast-meta-item podcast-meta-tags"></span>
+          </div>
+        {{/is}}
+      </header>
+    </div>
+
+    {{!-- Podcast Audio Track / Progress --}}
+    <div class="podcast-track hidden-xs hidden-sm hidden-md">
+      <div class="podcast-progress"></div>
+    </div>
+
+    <div class="podcast-controls">
+      {{!-- Podcast Buttons --}}
+      <div class="podcast-buttons">
+        <button class="button button-small button-podcast podcast-button-play{{^if is_external}} hidden-xs hidden-sm{{/if}} hidden-md hidden-lg hidden-xl podcast-js"><i class="icon icon-button-play"></i></button>
+        <button class="button button-small button-podcast button-secondary podcast-button-backward"><i class="icon icon-turn-w"></i></button>
+        <button class="button button-small button-podcast button-secondary podcast-button-speed">1.0×</button>
+        <button class="button button-small button-podcast button-secondary podcast-button-forward"><i class="icon icon-turn-e"></i></button>
+      </div>
+
+      {{!-- Podcast Time --}}
+      <div class="podcast-time">
+        <span class="podcast-time-current">00:00:00</span>
+        <span class="podcast-time-duration">00:00:00</span>
+      </div>
+    </div>
+  </div>
+</div>

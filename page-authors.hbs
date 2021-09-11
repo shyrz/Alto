@@ -1,0 +1,106 @@
+{{!< default}}
+
+<div class='content-area'>
+	<main class='site-main'>
+		{{#get
+			'authors'
+			limit='all'
+			include='count.posts'
+			order='count.posts desc'
+		}}
+			<div class='l-grid centered'>
+				{{#foreach authors}}
+					<article class='m-article-card as-author'>
+						<div class='m-article-card__picture'>
+							{{#if profile_image}}
+								<img
+									clasS='m-article-card__picture-background'
+									src='{{img_url profile_image size='m'}}'
+									loading='lazy'
+									alt=''
+								/>
+							{{else}}
+								<img
+									clasS='m-article-card__picture-background'
+									src='{{asset 'images/default-avatar-rectangle.jpg'}}'
+									loading='lazy'
+									alt=''
+								/>
+							{{/if}}
+							<a
+								href='{{url}}'
+								class='m-article-card__picture-link'
+								aria-label='{{name}}'
+							></a>
+							<h3 class='m-article-card__name'>{{name}}</h3>
+						</div>
+						<div class='m-article-card__info'>
+							<a
+								href='{{url}}'
+								class='m-article-card__info-link'
+								aria-hidden='true'
+								tabindex='-1'
+							>
+								{{#if bio}}
+									<p class='m-article-card__excerpt js-article-card-title'>
+										{{bio}}
+									</p>
+								{{/if}}
+							</a>
+							<div class='m-article-card__author-stats'>
+								<span>
+									{{plural
+										count.posts
+										empty=(t 'No posts')
+										singular=(t '1 post')
+										plural=(t '% posts')
+									}}
+								</span>
+								{{#has any='twitter, facebook, website'}}
+									<ul class='m-article-card__social'>
+										{{#if website}}
+											<li>
+												<a
+													href='{{website}}'
+													target='_blank'
+													rel='noopener'
+													aria-label='{{t 'Website'}}'
+												>
+													<span class='icon-globe' aria-hidden='true'></span>
+												</a>
+											</li>
+										{{/if}}
+										{{#if facebook}}
+											<li>
+												<a
+													href='https://facebook.com/{{facebook}}'
+													target='_blank'
+													rel='noopener'
+													aria-label='Facebook'
+												>
+													<span class='icon-facebook' aria-hidden='true'></span>
+												</a>
+											</li>
+										{{/if}}
+										{{#if twitter}}
+											<li>
+												<a
+													href='https://twitter.com/{{twitter}}'
+													target='_blank'
+													rel='noopener'
+													aria-label='Twitter'
+												>
+													<span class='icon-twitter' aria-hidden='true'></span>
+												</a>
+											</li>
+										{{/if}}
+									</ul>
+								{{/has}}
+							</div>
+						</div>
+					</article>
+				{{/foreach}}
+			</div>
+		{{/get}}
+	</main>
+</div>

@@ -59,6 +59,7 @@
   "in": "in",
   "Latest Articles": "近期文章",
   "Tag Cloud": "标签云",
+  "No tags found :(": "未找到标签",
   "Follow": "关注",
   "Sign up for my newsletter!": "注册以获取我的邮件通讯！",
   "Related Articles": "相关文章",
@@ -91,5 +92,7 @@
   "Please enter a valid email address!": "请输入正确的邮件地址！",
   "Already have an account?": "已有账户？",
   "Don't have an account yet?": "未有账户？",
-	"You might also like...": "你可能还喜欢..."
+	"You might also like...": "你可能还喜欢...",
+
+  "Scroll to Top": "回到顶部"
 }
