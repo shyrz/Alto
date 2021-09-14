@@ -5,7 +5,10 @@
     {{#post}}
       <article class="{{post_class}}{{#unless feature_image}} no-image{{/unless}} single-post{{#if og_description}} js-play{{/if}}">
         {{> post-header single=true big_title=true}}
-        {{> post-media ratio="horizontal"}}
+        {{#if feature_image}}
+          {{> post-media ratio="horizontal"}}
+        {{/if}}
+        
         <div class="post-content kg-canvas u-text-format">
           {{content}}
         </div>
