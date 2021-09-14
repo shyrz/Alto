@@ -20,6 +20,12 @@
 
 	{{!-- Title --}}
 	<title>{{meta_title}}</title>
+
+	<script>
+    if (localStorage.getItem('PROSE_DARKMODE') == 'true') {
+			document.documentElement.classList.add('dark-mode');
+    }
+	</script>
 	
 	{{!-- Webfont --}}
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -38,19 +44,7 @@
 	
 	<link rel="stylesheet" href="{{asset "built/screen.css"}}">
 
-	<script>
-    if (localStorage.getItem('PROSE_DARKMODE') == 'true') {
-        document.documentElement.classList.add('dark-mode');
-    }
-	</script>
-
-	{{!-- FontAwesome --}}
-	{{!-- <script src="https://kit.fontawesome.com/bb497b04c1.js" crossorigin="anonymous"></script> --}}
-
-	<!-- Promise Polyfill -->
-	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
-	<!-- Fetch Polyfill -->
-	<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/dist/fetch.umd.min.js"></script>
+	
 		
 	{{!-- DisqusJS --}}
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqusjs.css">
@@ -58,7 +52,9 @@
 
 	{{!-- Prism.css - Okaidia --}}
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
+
+	{{!-- FontAwesome --}}
+	{{!-- <script src="https://kit.fontawesome.com/bb497b04c1.js" crossorigin="anonymous"></script> --}}
 	{{!-- FontAwesome - Brands --}}
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/brands.css" integrity="sha384-S5yUroXKhsCryF2hYGm7i8RQ/ThL96qmmWD+lF5AZTdOdsxChQktVW+cKP/s4eav" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
@@ -87,6 +83,11 @@
 		<div class="mobile-menu"></div>
 	</div>
 
+	<!-- Promise Polyfill -->
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+	<!-- Fetch Polyfill -->
+	<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/dist/fetch.umd.min.js"></script>
+
 	{{!-- jQuery --}}
 	<script
 		src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -97,7 +98,7 @@
 	{{!-- Prism.js --}}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js" integrity="sha512-hM0R3pW9UdoNG9T+oIW5pG9ndvy3OKChFfVTKzjyxNW9xrt6vAbD3OeFWdSLQ8mjKSgd9dSO3RXn3tojQtiA8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-xCfKr8zIONbip3Q1XG/u5x40hoJ0/DtP1bxyMEi0GWzUFoUffE+Dfw1Br8j55RRt9qG7bGKsh+4tSb1CvFHPSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	
+
 	<script src="{{asset "built/main.min.js"}}"></script>
 
 	{{{block "scripts"}}}
