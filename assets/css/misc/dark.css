@@ -21,7 +21,7 @@
 .dark-mode .kg-bookmark-title,
 .dark-mode .kg-bookmark-author,
 .dark-mode .kg-bookmark-publisher {
-  color: var(--white-color);
+  color: var(--dark-mode-accent-text-color);
 }
 
 .dark-mode .burger::before,
@@ -83,11 +83,11 @@
 }
 
 .dark-mode .podcast-track {
-  background-color: var(--gray-700);
+  background-color: var(--interface-color-700);
 }
 
 .dark-mode .podcast-progress {
-  background-color: var(--gray-500);
+  background-color: var(--interface-color-500);
 }
 
 .dark-mode .scrolltop-button {
