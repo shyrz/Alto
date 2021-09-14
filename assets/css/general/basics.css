@@ -55,35 +55,58 @@
 }
 
 :root {
-	--primary-color: var(--ghost-accent-color, #49a8e4);
-	--primary-text-color: var(--cool-gray-800);
-	--secondary-text-color: var(--cool-gray-400);
+	--primary-color: var(--ghost-accent-color, #2775b6);
+	--primary-text-color: var(--interface-color-800);
+	--secondary-text-color: var(--interface-color-500);
 	--red-color: var(--red-400);
 	--white-color: #FFFFFF;
-	--light-gray-color: var(--cool-gray-100);
-	--mid-gray-color: var(--cool-gray-300);
-	--dark-gray-color: var(--cool-gray-800);
-	--black-color: #000000;
-	/* --dark-mode-bg-color: #282c35; */
-	--dark-mode-bg-color: var(--gray-800);
-	/* --dark-mode-darker-bg-color: #21252c; */
-	--dark-mode-darker-bg-color: var(--gray-900);
-	--dark-mode-primary-text-color: var(--gray-300);
-	--dark-mode-secondary-text-color: var(--gray-400);
-	/* --dark-mode-border-color: #495061; */
-	--dark-mode-border-color: var(--gray-600);
+  --black-color: #000000;
+	--light-gray-color: var(--interface-color-100);
+	--mid-gray-color: var(--interface-color-300);
+	--dark-gray-color: var(--interface-color-800);
+	--dark-mode-bg-color: var(--interface-color-900);
+	--dark-mode-darker-bg-color: var(--interface-color-850);
+	--dark-mode-primary-text-color: var(--interface-color-500);
+	--dark-mode-secondary-text-color: var(--interface-color-600);
+	--dark-mode-border-color: var(--interface-color-800);
 	--animation-base: ease-in-out;
 	--shadow-base: 0 0 5px rgba(0, 0, 0, 0.2);
   --shadow-button: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 	
 	
-	--font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; /* stylelint-disable-line value-keyword-case */
+	--font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 	--font-sans: 'Prose', 'Prose Sans', PingFang SC, Lantinghei SC, Hiragino Sans GB, STXihei, '华文细黑', 'Microsoft Yahei', '微软雅黑', Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 	--font-serif: 'Prose', 'Prose Serif', 'Noto Serif CJK SC', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'STSong', '华文宋体', 'AR PL SungtiL GB', NSimSun, SimSun, 'TW-Sung', 'WenQuanYi Bitmap Song', serif;
 	/* --font-serif: 'Merriweather', Georgia, 'Nimbus Roman No9 L'; */
 }
 
 :root {
+  
+  /* Primary Colors */
+  --primary-color-50: #f7fafd;
+  --primary-color-100: #eaf3fb;
+  --primary-color-200: #cde2f4;
+  --primary-color-300: #9ac6ea;
+  --primary-color-400: #68a9df;
+  --primary-color-500: #318ad3;
+  --primary-color-600: #2267a0;
+  --primary-color-700: #164469;
+  --primary-color-800: #10314c;
+  --primary-color-900: #091b2a;
+
+  /* Interface Colors */
+  --interface-color-50: #fcfcfc;
+  --interface-color-100: #f7f7f8;
+  --interface-color-200: #eaebeb;
+  --interface-color-300: #dddedf;
+  --interface-color-400: #c2c5c7;
+  --interface-color-500: #a0a4a7;
+  --interface-color-600: #7f8890;
+  --interface-color-700: #606c76;
+  --interface-color-800: #33414c;
+  --interface-color-850: #172027;
+  --interface-color-900: #0e151b;
+
 	/* Tailwind Colors */
   --blue-gray-50: #F8FAFC;
   --blue-gray-100: #F1F5F9;

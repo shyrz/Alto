@@ -56,6 +56,11 @@
   background-color: var(--dark-mode-darker-bg-color);
 }
 
+.dark-mode :not(pre)>code[class*=language-],
+.dark-mode pre[class*=language-] {
+  background: var(--dark-mode-darker-bg-color) !important;
+}
+
 .dark-mode .off-canvas {
   background-color: var(--dark-mode-bg-color);
 }
