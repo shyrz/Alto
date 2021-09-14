@@ -56,7 +56,8 @@
 
 :root {
 	--primary-color: var(--ghost-accent-color, #2775b6);
-	--primary-text-color: var(--interface-color-800);
+	--primary-text-color: var(--interface-color-850);
+  --accent-text-color: var(--interface-color-900);
 	--secondary-text-color: var(--interface-color-500);
 	--red-color: var(--red-400);
 	--white-color: #FFFFFF;
@@ -66,7 +67,8 @@
 	--dark-gray-color: var(--interface-color-800);
 	--dark-mode-bg-color: var(--interface-color-900);
 	--dark-mode-darker-bg-color: var(--interface-color-850);
-	--dark-mode-primary-text-color: var(--interface-color-500);
+	--dark-mode-primary-text-color: var(--interface-color-400);
+  --dark-mode-accent-text-color: var(--interface-color-200);
 	--dark-mode-secondary-text-color: var(--interface-color-600);
 	--dark-mode-border-color: var(--interface-color-800);
 	--animation-base: ease-in-out;
@@ -353,6 +355,7 @@
 
 html {
 	box-sizing: border-box;
+  font-size: 16px;
 }
 
 *,
@@ -364,7 +367,6 @@ html {
 body {
 	color: var(--primary-text-color);
 	font-family: var(--font-sans);
-	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.65;
 	text-rendering: optimizeLegibility;
