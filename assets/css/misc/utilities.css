@@ -107,30 +107,33 @@
 
 .u-text-format h1 {
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .u-text-format h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .u-text-format h3 {
-  font-size: 1.5rem;
+  font-size: 1.17rem;
+  font-weight: 700;
 }
 
 .u-text-format h4 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .u-text-format h5 {
-  font-size: 1.125rem;
+  font-size: 0.83rem;
   font-weight: 700;
 }
 
 .u-text-format h6 {
-  font-size: 1rem;
+  font-size: 0.67rem;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .u-text-format strong {
