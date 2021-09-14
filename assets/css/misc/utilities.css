@@ -102,33 +102,33 @@
 .u-text-format h4 + p,
 .u-text-format h5 + p,
 .u-text-format h6 + p {
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 
 .u-text-format h1 {
-  font-size: 26px;
+  font-size: 2rem;
 }
 
 .u-text-format h2 {
-  font-size: 23px;
+  font-size: 1.75rem;
 }
 
 .u-text-format h3 {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .u-text-format h4 {
-  font-size: 17px;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
 .u-text-format h5 {
-  font-size: 15px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
 .u-text-format h6 {
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
 }
